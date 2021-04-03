@@ -23,6 +23,18 @@ function randFace(){
         [rand(0, 5)];
 }
 
+// Начальное число кол-во выпавших граней
+const bets = (crown: 0, auchor:0, heart:0, spade:0,  club:0, diamond: 0 );
 
+// рандомная  ставка
+let totalBet = rand(1, funds);
+
+if(totalBet === 7){
+    totalBet = funds;
+    bets.heart = totalBet;
+} else {
+    // Случайное распределение всех ставок 
+}
+funds = funds - totalBet;
 
 
